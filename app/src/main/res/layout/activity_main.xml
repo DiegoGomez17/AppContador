@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/bt_toast"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_width="397dp"
+        android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -20,34 +21,12 @@
         android:text="@string/txt_toast"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bt_contador"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/color4"
-        android:onClick="ImplementarContador"
-        android:text="@string/txt_contador"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="OnClick" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txt_contador"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="396dp"
+        android:layout_height="575dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -58,9 +37,20 @@
         android:gravity="center"
         android:text="@string/txt_cont"
         android:textColor="#673AB7"
-        android:textSize="250sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_contador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_toast" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="250sp" />
+
+    <Button
+        android:id="@+id/bt_contador"
+        android:layout_width="399dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/color4"
+        android:onClick="ImplementarContador"
+        android:text="@string/txt_contador"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+</LinearLayout>
