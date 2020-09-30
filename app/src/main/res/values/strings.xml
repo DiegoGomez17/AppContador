@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contador 2DAM</string>
+    <string name="txt_contador">Contador</string>
+    <string name="txt_toast">Toast</string>
+    <string name="txt_cont">0</string>
+    <string name="txt_llevas100">Llevas 100!</string>
+    <string name="txt_saludo">Hola a todos!</string>
+</resources>
